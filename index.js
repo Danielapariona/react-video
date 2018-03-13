@@ -5,4 +5,4 @@ import Media from './src/playlist/components/media';
 const app = document.getElementById('app');
 
 // ReactDOM.render(que voy a renderizar, donde lo haré);
-render(<Media />, app);
+render(<Media title="¿Por qué aprender bitcoin?" author="Daniela Pariona" image="./images/covers/bitcoin.jpg" />, app);
