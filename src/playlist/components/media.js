@@ -4,7 +4,11 @@ import './media.css'
 
 class Media extends Component {
   // Estado de la aplicación
-  constructor(props) {
+  state = {
+    author: 'Daniela Pariona C.'
+  }
+
+  /* constructor(props) {
     // Para poder utilizar las propiedades
     super(props)
     this.state = {
@@ -12,11 +16,14 @@ class Media extends Component {
     }
     // Referencia del evento y bind(this) enlaza el componente
     this.handleClick = this.handleClick.bind(this);
-  }
+  } */
 
   // Heredan el contexto de su padre
   handleClick = (event) => {
-    console.log(this.props.title);
+    // console.log(this.props.title);
+    this.setState({
+      author: 'Ricardo Celis'
+    })
   }
 
   render() {
