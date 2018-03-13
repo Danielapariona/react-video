@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import './media.css'
 
 class Media extends Component {
-  /* constructor(props) {
+  // Estado de la aplicación
+  constructor(props) {
     // Para poder utilizar las propiedades
     super(props)
+    this.state = {
+      author: props.author
+    }
     // Referencia del evento y bind(this) enlaza el componente
     this.handleClick = this.handleClick.bind(this);
-  } */
+  }
 
   // Heredan el contexto de su padre
   handleClick = (event) => {
@@ -36,7 +40,7 @@ class Media extends Component {
             className="Media-image"
           />
           <h3 className="Media-title">{this.props.title}</h3>
-          <p className="Media-author">{this.props.author}</p>
+          <p className="Media-author">{this.state.author}</p>
         </div>
       </div>
     )
