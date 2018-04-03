@@ -3,11 +3,17 @@ import Category from './category'
 import './categories.css'
 
 function Categories(props) {
-  return(
+  return (
     <div className='Categories'>
       {
-        props.categories.map(item=>{
-          return <Category key={item.id} {...item}/> 
+        props.categories.map(item => {
+          return (
+            <Category
+              key={item.id}
+              {...item}
+              handleOpenModal = {props.handleOpenModal}
+            />
+          )
         })
       }
     </div>

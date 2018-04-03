@@ -19,12 +19,12 @@ class Media extends PureComponent {
   } */
 
   // Heredan el contexto de su padre
-  handleClick = (event) => {
+  /* handleClick = (event) => {
     // console.log(this.props.title);
     this.setState({
       author: 'Ricardo Celis'
     })
-  }
+  } */
 
   render() {
     const styles = {
@@ -37,7 +37,7 @@ class Media extends PureComponent {
     }
     
     return (
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={this.props.handleClick}>
         <div className="Media-cover">
           <img
             src={this.props.cover}
