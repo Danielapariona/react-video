@@ -4,7 +4,7 @@ import Home from '../pages/containers/home'
 // import Playlist from './src/playlist/components/playlist';
 import data from '../api.json'
 
-const app = document.getElementById('app');
+const home = document.getElementById('home-container');
 
 // ReactDOM.render(que voy a renderizar, donde lo haré);
-render(<Home data={data}/>, app);
+render(<Home data={data}/>, home);
